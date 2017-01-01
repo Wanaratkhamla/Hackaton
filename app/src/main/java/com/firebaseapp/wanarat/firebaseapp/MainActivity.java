@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressDialog.setMessage("Registering User ....");
         progressDialog.show();
 
-        firebaseauth.createUserWithEmailAndPassword(email,password)
+        firebaseauth.createUserWithEmailAndPassword(email,password) //Add your firebase
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
