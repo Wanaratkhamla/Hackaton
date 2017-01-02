@@ -1,6 +1,7 @@
 package com.firebaseapp.wanarat.firebaseapp;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressDialog = new ProgressDialog(this);
 
         firebaseauth = FirebaseAuth.getInstance();
+        if (firebaseauth.getCurrentUser() != null) {
+            //profile activity here
+            finish();
+            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+        }
 
         buttonRegister = (Button) findViewById(R.id.register);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
@@ -72,7 +78,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             //user is success
                             //we will start profile
                             //right now let
-                            Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_LONG).show();
+                            finish();
+                            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
                         }else{
                             Toast.makeText(MainActivity.this, "Registered not Successfully", Toast.LENGTH_LONG).show();
                         }
@@ -87,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (v == textViewsignup){
             //will open login activity here
+            startActivity(new Intent(this, LoginActivity.class));
         }
     }
 }
