@@ -25,6 +25,29 @@
             android:layout_gravity="center_horizontal"
             android:textSize="20dp" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter your Full name"
+            android:ems="10"
+            android:id="@+id/editTextName"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter Address"
+            android:ems="10"
+            android:id="@+id/editTextAddress" />
+
+        <Button
+            android:text="Set Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAddpeople" />
+
         <Button
             android:text="Logout"
             android:layout_width="181dp"

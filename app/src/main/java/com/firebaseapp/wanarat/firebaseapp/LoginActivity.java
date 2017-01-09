@@ -47,6 +47,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+
     @Override
     public void onClick(View v) {
         if (v == buttonsignin){
@@ -55,6 +56,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (v == textViewSignin){
             startActivity(new Intent(this, MainActivity.class));
         }
+    }
+
+
+
+
+    public void showToast(){
+        Toast.makeText(this, "Invalid Email or Password", Toast.LENGTH_LONG).show();
+        return;
     }
 
     private void userlogin() {
@@ -72,7 +81,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        progressDialog.setMessage("Registering User ....");
+        progressDialog.setMessage("Login User Wait ....");
         progressDialog.show();
 
         firebaseauth.signInWithEmailAndPassword(email, password)
@@ -83,6 +92,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if (task.isSuccessful()) {
                     finish();
                    startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+                }else{
+                    showToast();
                 }
             }
         });
