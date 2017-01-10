@@ -13,7 +13,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.sql.Struct;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
@@ -56,14 +55,14 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         buttonsave.setOnClickListener(this);
     }
 
-    private void saveUserinfomation(){
+    private void saveUserinfomation(){ //Set Value Database Realtime
         String name = editTextName.getText().toString().trim();
         String address = editTextAddress.getText().toString().trim();
 
-        UserInfomation userInfomation = new UserInfomation(name, address);
+        UserInfomation a = new UserInfomation(name,address);
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
-        databaseReference.child(user.getUid()).setValue(userInfomation);
+        databaseReference.child(user.getUid()).setValue(a);
 
         Toast.makeText(this, "Infomation Saved...", Toast.LENGTH_LONG).show();
 
