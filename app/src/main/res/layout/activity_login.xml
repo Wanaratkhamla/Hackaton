@@ -46,14 +46,14 @@
         android:hint="Enter Your Password"
         android:layout_margin="15dp" />
 
-    <Button
-        android:text="sign in"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonsignin"
-        android:layout_margin="15dp" />
+        <Button
+            android:text="sign in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonsignin"
+            android:layout_margin="15dp" />
 
-    <TextView
+        <TextView
         android:text="No have an Account? sign up here"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

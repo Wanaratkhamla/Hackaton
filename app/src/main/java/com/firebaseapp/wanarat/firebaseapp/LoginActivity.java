@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (firebaseauth.getCurrentUser() != null) { //check user if not null send profile
             //profile activity here
             finish();
-            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+            startActivity(new Intent(getApplicationContext(),NavigationDrawer.class));
         }
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -91,7 +91,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 progressDialog.dismiss();
                 if (task.isSuccessful()) {
                     finish();
-                   startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+                   startActivity(new Intent(getApplicationContext(),NavigationDrawer.class));
                 }else{
                     showToast();
                 }

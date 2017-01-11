@@ -20,11 +20,12 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ProfileActivity" />
-            <activity
-                android:name=".TestNavigationDrawer"
-                android:label="@string/title_activity_test_navigation_drawer"
-                android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Contact" />
+        <activity android:name=".TestGetDatabase"></activity>
     </application>
 
 </manifest>
