@@ -21,7 +21,7 @@ public class FirstOpen extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_open);
+        setContentView(R.layout.secondlogo);
     }
     CountDownTimer cdt = new CountDownTimer(3000, 1000) {
         public void onTick(long millisUntilFinished) { //Delay Time your App

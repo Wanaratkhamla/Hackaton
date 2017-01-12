@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             userlogin();
         }
         if (v == textViewSignin){
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, Register.class));
         }
     }
 
@@ -69,6 +69,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void userlogin() {
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
+        String emailsuc = email + "@healthcare.com";
 
         if (TextUtils.isEmpty(email)){
             //email is empty
@@ -84,7 +85,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         progressDialog.setMessage("Login User Wait ....");
         progressDialog.show();
 
-        firebaseauth.signInWithEmailAndPassword(email, password)
+        firebaseauth.signInWithEmailAndPassword(emailsuc, password)
         .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

@@ -13,4 +13,44 @@
     tools:context="com.firebaseapp.wanarat.firebaseapp.NavigationDrawer"
     tools:showIn="@layout/app_bar_navigation_drawer">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AlertMom"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/register"
+                android:id="@+id/btnoldwomb" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
