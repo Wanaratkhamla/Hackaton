@@ -3,6 +3,7 @@
     package="com.firebaseapp.wanarat.firebaseapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -33,7 +34,8 @@
         <activity android:name=".MomProfile" />
         <activity android:name=".Ultrasound" />
         <activity android:name=".Blood" />
-        <activity android:name=".Testimage"></activity>
+        <activity android:name=".Testimage" />
+        <activity android:name=".Testuploadimage"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blood">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                tools:textSize="36sp" />
+
+            <TextView
+                android:text="ผลตรวจเลือดครั้งแรก"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="ค่าความเข้มเลือด"
+                android:ems="10"
+                android:id="@+id/editText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="ค่าความเสี่ยงโรคโลหิตจาง"
+                android:ems="10"
+                android:id="@+id/editText8" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="โรคติดต่อทางเพศสัมพันธ์"
+                android:ems="10"
+                android:id="@+id/editText9" />
+
+            <CheckBox
+                android:text="HIV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox" />
+
+            <CheckBox
+                android:text="ไวรัส ตับอักเสบ B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2" />
+
+            <CheckBox
+                android:text="ซิฟิลิส"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox3" />
+
+            <TextView
+                android:text="ผลตรวจเลือดครั้งสอง"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="ค่าความเข้มเลือด"
+                android:ems="10"
+                android:id="@+id/editText10" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="โรคติดต่อทางเพศสัมพันธ์"
+                android:ems="10"
+                android:id="@+id/editText11" />
+
+            <CheckBox
+                android:text="HIV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox4" />
+
+            <CheckBox
+                android:text="ไวรัส ตับอักเสบ B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox5" />
+
+            <CheckBox
+                android:text="ซิฟิลิส"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox6" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

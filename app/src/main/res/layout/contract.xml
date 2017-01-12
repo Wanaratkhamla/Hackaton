@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contacttwo"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:text="ติดต่อ ห้องคลอดฉุกเฉิน"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_weight="0.03"
+        android:textSize="18sp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@android:color/background_dark" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:text="089-9999999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_weight="0.02"
+        android:textSize="18sp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@android:color/background_dark" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:text="เบอร์โทรฉุกเฉิน"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_weight="0.05"
+        android:textSize="18sp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="1669"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_weight="0.10"
+        android:textSize="18sp"
+        android:layout_marginLeft="73dp"
+        android:textColor="@android:color/background_dark" />
+</LinearLayout>
